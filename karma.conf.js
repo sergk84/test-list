@@ -32,7 +32,7 @@ module.exports = function (config) {
         loaders: [
           { test: /\.js/, exclude: [/app\/lib/, /node_modules/], loader: 'babel' },
           { test: /\.html$/, loader: 'raw' },
-          { test: /\.(scss|sass)$/, loader: 'style!css!sass' },
+          { test: /\.(less)$/, loader: 'style!css!less' },
           { test: /\.css$/, loader: 'style!css' }
         ]
       }
