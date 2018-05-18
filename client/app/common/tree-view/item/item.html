@@ -1,0 +1,9 @@
+<div class="item-block" ng-click="expand = !expand; clickItem(item)">
+  <span class="expand">
+    <span ng-if="expand">-</span>
+    <span ng-if="!expand">+</span>
+  </span>
+  <p class="label">{{item.label}}</p>
+</div>
+<div class="inner-item" ng-show="showList && expand">
+</div>
